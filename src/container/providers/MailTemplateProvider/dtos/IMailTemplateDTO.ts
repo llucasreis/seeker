@@ -1,9 +1,9 @@
-interface ITemplateData{
+interface ITemplateData {
   [key: string]: string | number;
 }
 
 export default interface IMailTemplateDTO {
-  type?: string;
+  file: string;
   body?: string;
-  data?: ITemplateData;
+  variables?: ITemplateData;
 }

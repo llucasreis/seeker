@@ -1,4 +1,7 @@
+import { container } from 'tsyringe';
 import kafka from '@infra/kafka/client';
+import SendTemplateEmailService from '@modules/emails/services/SendTemplateEmailService';
+import IRequestEmailDataDTO from '@modules/emails/dtos/IRequestEmailDataDTO';
 
 export default class SendTemplateEmail {
   constructor() {
@@ -6,6 +9,10 @@ export default class SendTemplateEmail {
   }
 
   async setupConsumer(): Promise<void> {
+    const sendTemplateEmailService = container.resolve(
+      SendTemplateEmailService,
+    );
+
     const consumer = kafka.consumer({
       groupId: 'seeker',
     });
@@ -18,9 +25,9 @@ export default class SendTemplateEmail {
 
     await consumer.run({
       async eachMessage({ message }) {
-        const data = JSON.parse(message.value.toString());
-        console.log('Received message!');
-        console.log(data);
+        const data: IRequestEmailDataDTO = JSON.parse(message.value.toString());
+
+        await sendTemplateEmailService.execute(data);
       },
     });
 

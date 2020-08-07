@@ -1,4 +1,5 @@
 import express from 'express';
+import '../../container';
 
 const server = express();
 server.use(express.json());

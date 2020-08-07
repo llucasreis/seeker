@@ -1,4 +1,4 @@
-import IMailTemplateDTO from "../../MailTemplateProvider/dtos/IMailTemplateDTO";
+import IMailTemplateDTO from '../../MailTemplateProvider/dtos/IMailTemplateDTO';
 
 interface IMailContact {
   name: string;
@@ -8,6 +8,6 @@ interface IMailContact {
 export default interface ISendEmailDTO {
   to: IMailContact;
   from?: IMailContact;
-  subject?: string;
+  subject: string;
   template: IMailTemplateDTO;
 }

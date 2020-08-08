@@ -3,7 +3,7 @@ interface ITemplateData {
 }
 
 interface IMailTemplateData {
-  type: 'test';
+  type?: 'example';
   body?: string;
   variables?: ITemplateData;
 }

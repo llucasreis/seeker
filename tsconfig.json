@@ -17,6 +17,7 @@
     "baseUrl": ".",
     "paths": {
       "@config/*": ["./src/config/*"],
+      "@container/*": ["./src/container/*"],
       "@infra/*": ["./src/infra/*"],
       "@modules/*": ["./src/modules/*"],
       "@utils/*": ["./src/utils/*"],

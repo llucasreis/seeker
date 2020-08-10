@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import path from 'path';
 import FakeMailProvider from '@container/providers/MailProvider/fakes/FakeMailProvider';
-import AppError from '@errrors/AppError';
+import AppError from '@errors/AppError';
 import SendTemplateEmailService from './SendTemplateEmailService';
 
 let fakeMailProvider: FakeMailProvider;

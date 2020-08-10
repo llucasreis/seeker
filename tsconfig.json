@@ -21,7 +21,7 @@
       "@infra/*": ["./src/infra/*"],
       "@modules/*": ["./src/modules/*"],
       "@utils/*": ["./src/utils/*"],
-      "@errrors/*": ["./src/errors/*"]
+      "@errors/*": ["./src/errors/*"]
     }
   },
   "include": [

@@ -4,3 +4,4 @@ yarn.lock
 client
 .env
 coverage
+dist

@@ -2,7 +2,7 @@ import { injectable, inject } from 'tsyringe';
 import path from 'path';
 import IMailProvider from 'src/container/providers/MailProvider/models/IMailProvider';
 import isValidEmail from '@utils/isValidEmail';
-import AppError from '@errrors/AppError';
+import AppError from '@errors/AppError';
 import IRequestEmailDataDTO from '../dtos/IRequestEmailDataDTO';
 
 @injectable()

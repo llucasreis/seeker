@@ -1,5 +1,5 @@
 interface IMailConfig {
-  driver: 'ethereal' | 'ses'; // any driver you want
+  driver: 'ethereal' | 'ses' | 'kinghost'; // any driver you want
 
   host: string;
   port: number;

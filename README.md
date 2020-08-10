@@ -27,6 +27,6 @@
 
 ## :closed_book: License
 
-**Under development**. This project is under the MIT license.
+**Under development**. This project is under the [MIT license](https://github.com/lprs110/seeker/edit/master/LICENSE).
 
 Made by [Lucas Reis](https://github.com/lprs110)
